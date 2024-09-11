@@ -391,7 +391,6 @@ void async_tcp_server::receive_data()
 
 void async_tcp_server::run_heartbeat()
 {
-
 	auto next = std::chrono::high_resolution_clock::now() + heartbeat_interval_;
 	while (running_)
 	{
